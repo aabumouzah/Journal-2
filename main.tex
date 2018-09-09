@@ -21,7 +21,38 @@ As I was browsing the articles it started to be more obvious where I should read
 
 
 \section{Critical/Creative Reading:}
+ Below are the critical and creative notes for \cite{8401588}:
+\begin{itemize}
+ 
+    \item Main problem is that in disasters situations fragmentation is implemented to the communication networks. Different fragments make it impossible for the users to access in a fragment to access data on data within another fragmentation.
+    \item Most of the proposed papers proposed solutions but on the reactive stage. 
+    \item This article proposed a solution on using the ICN-CCN Content Centric Network protocol to proactively replicate content across the integrated network considering the network fragmentation
+    \item Since the forwarding plane is based on the nodes identifiers, which need to be decoupled from the object identifier, how that would be implemented with CCN which doesn't support such feature? 
+    \item As stated in the paper, how is it possible to support the long-lived pending interests since CCN protocol will be using the delay and disruption-tolerant (DTN) routing protocols?
+    \item This paper has a gap among what was stated on the abstract and what was proposed in the article. Perhaps, the proposed system still need another improvement stage.
+    
+  
+Below are the critical and creative notes for the \cite{8401595}:
 
+    \item There are two Main contributions proposed in this article. First, a new architecture (NEO) Network Object that is based on the ICN methodology upon the DNS mechanisms and migration towards the other existing standard protocols such as HTTP over TCP/IP and CoAP over UDP/IP 
+    \item The second contribution is the ability for NEO to process within the multiple communication models including the Unicast and Multicast models. That enables a policy-based request routing mechanism based on query interface.   
+    \item Three Choices NEO is based upon: 1) is a separate DNS domain name is created for each data object. 2) To query data object's that stored in the DNS resources records the domain name is used. 3)  NEO can use the the API for to select the most optimal transfer protocol. 
+    \item The implementation of the testbed exceeded the previously implemented testbeds with the previous related works
+    \item The difference between the SNAMP and NEO is that SNAMP maps between two sets of NDN name prefixes. NEO iwth the use of the DNS maps from data object names to metadata and locators. 
+    \item iDNS paper covers the the idea of openness to different object transfer protocols with the concept of storing metadata in DNS but not in depth demonstrating. 
+    \item NEO introduces a local Policy-enabled DNS Proxy (PDP) to implement a number of information-centric network features,
+    \item Within the NEO control planes consists two two content locations: Local Content proxies that located in the ICN provider networks and Remote Content Servers that located in the global internet. 
+    \item The metadata for an object is stored in various types of DNS resource records associated with the object name.
+    \item how about running NEO on the HTTPS? 
+    \item Is the NEO architecture robust against security breaches such as the content poisoning  attacks? \item Does the NEO resist the content and network congesting?
+    
+  
+    
+    
+
+    
+    
+\end{itemize}
 
 	\clearpage
 	\bibliographystyle{ieeetr}
